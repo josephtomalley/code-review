@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <header>
+  </header>
+    <body>
+      <script>
+      var answer, guess, guessing;
+      alert("Hello! We are going to play a game in which you guess the number of cats owned by a person judging by their appearance! Got it?");
+      alert("You will receive hints. The person may own 0 to 10 cats. Here we go...")
+      guessing = true;
+      answer = Math.ceil((Math.random() * 11) - 1);
+      console.log(answer);
+      
+      while (guessing) {
+        if(answer === 0){
+          var guess = prompt("The person is wearing a T-shirt of a pug on a skateboard wearing a T-shirt that says 'cats suck!' How many cat's do they own?");
+        } else if (answer === 1){
+          var guess = prompt("The person is quietly sipping coffee while reading The Stranger. How many cats do they own?");
+        } else if (answer === 2){
+          var guess = prompt("The person is laughing at reddit cat photos on their phone and has visible amounts of cat hair on their clothes. How many cats do they own?");
+        } else if (answer === 3){
+          var guess = prompt("The person is walking down the sidewalk with 4 bags of cat litter and food. How many cats do they own?");
+        } else if (answer === 4){
+          var guess = prompt("The person is wearing a keyboard cat T-shirt and looking at plans for cat trees on their laptop. How many cats do they own?");
+        } else if (answer === 5){
+          var guess = prompt("The person is outside of cat city in the U-district with a VHS camcorder and 2 phanny packs. How many cats do they own?");
+        } else if (answer === 6){
+          var guess = prompt("The person is wearing a cat T-shirt, cat socks, is visibly covered in cat hair and is reading cat-adventure-fiction at Elliot Bay. How many cats do they own?");
+        } else if (answer === 7){
+          var guess = prompt("This person is walking down the street with a stroller holding what appears to be 4 cats but there's probably more at home... How many cats do they own?");
+        } else if (answer === 8){
+          var guess = prompt("This person quickly retreats into a Chevy van parked on Melrose near Denny. There is a long archipelago of cheap cat food trailing away from the vehicle into the middle of the street. How many cats do they own?");
+        } else if (answer === 9){
+          var guess = prompt("This person isn't really seen but glimpsed; a blur of wild eyes framed by a basement window almost completely caked in various hues of tabby, siamese, calico and black. How many cats do they own?");
+        } else {
+          var guess = prompt("This person isn't even alive but long ago succumbed to a panoply of disorders caused by the cat parasite Toxolplasma Godhii. How many cats do they own?");
+        };
+        if (guess == answer){
+          alert("You have an immpeccable ability to stereotype cat owners by their appearance! Congratulations!");
+          guessing = false;
+        } else{
+          alert("Nope. guess again please");
+        }
+      };
+      </script>
+  </body>
+</html>
+
+
+  
